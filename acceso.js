@@ -38,7 +38,9 @@ function inicio(){
     btnBuscarDNI.addEventListener("click",buscarPorDNI);
     btnSolicitarAcceso.addEventListener("click",solicitarAcceso);
     btnSolicitarAcceso.disabled = true;
-    globalThis.socios = JSON.parse(localStorage.getItem("listaSocios"));
+    if (localStorage.getItem("listaSocios")!=null){
+      globalThis.socios = JSON.parse(localStorage.getItem("listaSocios"));
+  }
     cuadroErrores.innerHTML="";
     actualizarBotones();
     cambiarABarraCodSocio();
