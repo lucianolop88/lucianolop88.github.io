@@ -26,7 +26,7 @@ var cuadroErrores = document.getElementById("mensajeError");
 
 var socio = {};
 var socios = [];
- var indice = -1;
+var indice = -1;
 
 
 function inicio(){
